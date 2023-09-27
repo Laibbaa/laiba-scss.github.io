@@ -1,0 +1,72 @@
+@import "varibles";
+@import "media-qure";
+
+
+@mixin flex-align ($Jc) {
+    display: flex;
+    align-items: center;
+    justify-content: $Jc;
+}
+.nav{
+    background-color: $light;
+    height: 80px;
+@include flex-align(space-between);
+position: relative;
+padding: 0.5rem calc((100vw - 1200px) / 2);
+&-logo{
+    color: $text-dark;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-left: 24px;
+}
+&-bars {
+    
+display: none;
+
+    @include tablet {
+      color: $text-dark;
+     display: block;
+      position: absolute;
+      top: 22px;
+      right: 20px;
+      font-size: 1.5rem;
+    }
+  }
+  &-menu{
+    display: flex;
+    margin-left: 24px;
+    margin-right: 24px;
+
+    @include tablet{
+        display: none;
+    }
+    &-links{
+      text-decoration: none;
+      color: $text-dark;
+      @include flex-align(center);
+      padding: 0 1rem;
+      font-size: medium;
+      font-weight: 500;
+
+      &:hover{
+        color: $lime;
+        transition: all .3s ease;
+      }
+    }
+    &-btn{
+        background-color: $lime;
+        color: white;
+        padding: .5rem 1.3rem;
+        border: none;
+        margin-left: 16px;
+        cursor: pointer;
+        border-radius: 4px;
+        &:hover{
+            background-color: #42c985c4;
+            transition: all .3s ease-in;
+        }
+    }
+  }
+
+}

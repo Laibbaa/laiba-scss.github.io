@@ -1,0 +1,141 @@
+.nav {
+  background-color: #f7f7f7;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+}
+.nav-logo {
+  color: black;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-left: 24px;
+}
+.nav-bars {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .nav-bars {
+    color: black;
+    display: block;
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    font-size: 1.5rem;
+  }
+}
+.nav-menu {
+  display: flex;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+}
+.nav-menu-links {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  font-size: medium;
+  font-weight: 500;
+}
+.nav-menu-links:hover {
+  color: #00cc66;
+  transition: all 0.3s ease;
+}
+.nav-menu-btn {
+  background-color: #00cc66;
+  color: white;
+  padding: 0.5rem 1.3rem;
+  border: none;
+  margin-left: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.nav-menu-btn:hover {
+  background-color: rgba(66, 201, 133, 0.768627451);
+  transition: all 0.3s ease-in;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+.container .left {
+  line-height: 1.2;
+}
+@media screen and (max-width: 768px) {
+  .container .left {
+    padding: 5rem 0;
+  }
+}
+@media screen and (max-width: 440px) {
+  .container .left {
+    line-height: 1.5;
+  }
+}
+.container .left h1 {
+  color: #00cc66;
+  font-size: 4rem;
+}
+@media screen and (max-width: 440px) {
+  .container .left h1 {
+    font-size: 1.5rem;
+  }
+}
+.container .left h2 {
+  color: black;
+  font-size: 3.5rem;
+}
+@media screen and (max-width: 440px) {
+  .container .left h2 {
+    font-size: 2rem;
+  }
+}
+.container .left p {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+@media screen and (max-width: 440px) {
+  .container .left p {
+    font-size: 1.5rem;
+    margin-top: 0.2rem;
+    font-weight: 600;
+  }
+}
+.container .left button {
+  margin-left: 0;
+  margin-top: 1rem;
+}
+.container .right {
+  text-align: center;
+  margin-top: 20px;
+}
+.container .right .img {
+  width: 70%;
+}/*# sourceMappingURL=style.css.map */
